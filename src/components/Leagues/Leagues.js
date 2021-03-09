@@ -1,7 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 
 const Leagues = (props) => {
     const { strBadge, strLeague, strSport, idLeague } = props.league;
@@ -11,6 +12,7 @@ const Leagues = (props) => {
         history.push(url);
     }
     return (
+
         <div>
             <img src={strBadge} alt="" />
             <h1>{strLeague}</h1>
