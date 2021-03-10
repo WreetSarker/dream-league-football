@@ -8,8 +8,6 @@ const Home = () => {
             .then(resp => resp.json())
             .then(data => setLeagues(data.countrys))
     }, []);
-    // console.log(leagues);
-
     return (
         <div>
             <div className="header">
