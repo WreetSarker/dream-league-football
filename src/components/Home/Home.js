@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Leagues from '../Leagues/Leagues';
-
+import './Home.css'
 const Home = () => {
     const [leagues, setLeagues] = useState([]);
     useEffect(() => {
@@ -8,10 +8,13 @@ const Home = () => {
             .then(resp => resp.json())
             .then(data => setLeagues(data.countrys))
     }, []);
-    console.log(leagues);
+    // console.log(leagues);
+
     return (
         <div>
-            <h1>Top Leagues from England!</h1>
+            <div className="header">
+                <h1 className="text">Top Leagues from England!</h1>
+            </div>
             {
                 leagues.map(league => <Leagues league={league}></Leagues>)
             }

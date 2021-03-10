@@ -1,0 +1,35 @@
+.league-badge{
+    background-image: url("../../images/field.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 300px;
+}
+.league-badge img{
+    height: 80%;
+    
+}
+.league-info{
+    background-color: blue;
+    color: white;
+}
+.league-info{
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: space-around;
+}
+@media (max-width: 800px) {
+    .league-info {
+      flex-direction: column;
+    }
+  }
+.gender-img img{
+    width:  40%;
+}
+.icons{
+    text-align: center;
+}
+.icons img{
+    width: 5%;
+}

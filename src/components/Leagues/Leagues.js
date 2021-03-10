@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import './Leagues.css'
 
 
 const Leagues = (props) => {
@@ -12,13 +13,16 @@ const Leagues = (props) => {
         history.push(url);
     }
     return (
-
-        <div>
-            <img src={strBadge} alt="" />
-            <h1>{strLeague}</h1>
-            <h5>Sports type: {strSport}</h5>
-            <button onClick={() => explore(idLeague)}>Explore  <FontAwesomeIcon icon={faArrowRight} /></button>
+        <div className="leagues-container">
+            <div className="grid-item">
+                <img className="league-img" src={strBadge} alt="" />
+                <h1 className="league-name">{strLeague}</h1>
+                <h5>Sports type: {strSport}</h5>
+                <button className="explore-btn" onClick={() => explore(idLeague)}>Explore  <FontAwesomeIcon icon={faArrowRight} /></button>
+            </div>
         </div>
+
+
     );
 };
 
