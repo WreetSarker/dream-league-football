@@ -2,7 +2,7 @@
     display: inline-grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 50px;
-  background-color: #2196F3;
+  justify-items: center;
   padding: 10px;
   }
   .grid-item {
@@ -21,5 +21,8 @@
     width: 90px;
     border-radius: 15px;
     padding: 5px;
+  }
+  body{
+    background-image: linear-gradient(45deg,rgb(18, 107, 107), rgb(7, 7, 56));
   }
  
